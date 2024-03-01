@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/examNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exam Name" />
+
+        <EditText
+            android:id="@+id/examDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exam Date"
+            android:focusable="false" /> <!-- Makes EditText not editable; will open DatePickerDialog -->
+
+        <EditText
+            android:id="@+id/totalMarksEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Marks"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/saveExamButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Exam" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
